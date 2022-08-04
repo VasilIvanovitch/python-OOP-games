@@ -244,6 +244,7 @@ class SeaBattle:
                 if j > 8: print(self._symbol_comp[a], end='  ')
                 else: print(self._symbol_comp[a], end=' ')
             print()
+        print()
         self.info_game_over()
 
     def ships_conditions(self, game_pole):
