@@ -196,7 +196,7 @@ class SeaBattle:
         self._comp_p = GamePole(self._size)
         self._comp_p.init()
         self._pole_comp = self.pole_comp() # таблица для обстрела ячеек ИИ
-        self._pole_comp_special = self._pole_comp  # вспомогательная таблица для обстрела вокруг поврежденных палуб компом      
+        self._pole_comp_special = self._pole_comp[:]  # вспомогательная таблица для обстрела вокруг поврежденных палуб компом      
         self._shot_hum = []  # база залпов человека
         self._shot_comp = [] # база залпов компа
         self._ships_conditions_hum = self.ships_conditions(self._human_p)  # состояние кораблей человека
@@ -223,6 +223,7 @@ class SeaBattle:
         s = ' '.join(str(i) for i in range(self._size))
         l = 10
         if self._size > 9: l = 11 
+        print()
         print('Ваше поле:'," "*self._size*2, 'Поле ИИ:')              
         print(s + " "*l + s)
         for i in range(self._size):
