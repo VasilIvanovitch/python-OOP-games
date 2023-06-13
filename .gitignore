@@ -1,2 +1,3 @@
-misha_clicker.py
-/ignore
+misha_clicker.py\
+/venv/
+/.idea/
