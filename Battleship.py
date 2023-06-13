@@ -423,10 +423,3 @@ def battle(size=10, move_ships=True):
 if __name__ == '__main__':
     battle()
     pass
-#game = SeaBattle(12, True)
-#while not game.end:
-#    game.human_shot()
-#    if not game.end:
-#        game.comp_shot()
-#    game.show()
-#a = input_param()    
